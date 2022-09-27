@@ -162,8 +162,8 @@ let list ?sep pp_elt = iter ?sep List.iter pp_elt
 let array ?sep pp_elt = iter ?sep Array.iter pp_elt
 let seq ?sep pp_elt = iter ?sep Seq.iter pp_elt
 let hashtbl ?sep pp_binding = iter_bindings ?sep Hashtbl.iter pp_binding
-let queue ?sep pp_elt = iter Queue.iter pp_elt
-let stack ?sep pp_elt = iter Stack.iter pp_elt
+let queue ?sep pp_elt = iter ?sep Queue.iter pp_elt
+let stack ?sep pp_elt = iter ?sep Stack.iter pp_elt
 
 (* Stdlib type dumpers *)
 
